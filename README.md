@@ -18,19 +18,25 @@ more specifically, I worked in the firmware systems division under the Space Sys
 
 # Projects
 
-##### Software Projects
+Please be advised that the source code for all of these projects cannot be released due to copyright issues
+and intellectual property theft. I've tried my best to use images to help backup the content I've wrote
+in the README portions of the documentation. 
+
+Feel free to get in touch with me by referring to the contact section below.
+
+### Software Projects
 
 
-##### Hardware Projects
+### Hardware Projects
 
 
-##### Circuit Design Projects
+### Circuit Design Projects
 
 
-##### Other
+### Other
 
 
-### Contact
+# Contact
 Email: krishanth.suthaharan@mail.utoronto.ca
 LinkedIn:
 
