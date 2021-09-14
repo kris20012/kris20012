@@ -1,4 +1,4 @@
-Krishanth (Kris) Suthaharan
+# Krishanth (Kris) Suthaharan
 
 I am a third year Electrical and Computer Engineering student at the University of Toronto. 
 I'm interested in computer hardware, electronic circuit designs and robots.
@@ -13,6 +13,26 @@ in the organization for about 3 years. I joined RSX in my first year as an elect
 In my second year, I took on greater responsibilities being the Junior Electrical Lead. And now, I've 
 become the Electrical Lead. For the past year, I've also been a member on the University of Toronto Aerospace team and 
 more specifically, I worked in the firmware systems division under the Space Systems subteam.
+
+ 
+
+# Projects
+
+##### Software Projects
+
+
+##### Hardware Projects
+
+
+##### Circuit Design Projects
+
+
+##### Other
+
+
+### Contact
+Email: krishanth.suthaharan@mail.utoronto.ca
+LinkedIn:
 
 - 👋 Hi, I’m @kris20012
 - 👀 I’m interested in ...
