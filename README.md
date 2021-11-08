@@ -148,15 +148,15 @@ lights to turn on/off according to logical operators within the chip and binary 
 •	Utilized Arduino to program a seven-segment display in C++ that would be able to simulate <br />
 •	Timers such as the ones at Ice Hockey games to show time elapsed
 
-##### Sumo Bot | 2018
-
-•	Utilized Infrared Sensors and programming in C++ to maneuver a small robot that would
-be used to stay in an arena, detect other Sumo Bots and engage in combat with them
-
 ##### Beetle Bot | 2017
 
 •	Developed a device with SPDT (single pole double throw) switches, motors and other electrical 
 components to create a device that would independently operate through a maze
+
+##### Sumo Bot | 2018
+
+•	Utilized Infrared Sensors and programming in C++ to maneuver a small robot that would
+be used to stay in an arena, detect other Sumo Bots and engage in combat with them
 
 # Contact
 
