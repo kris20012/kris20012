@@ -31,69 +31,6 @@ I’m always interested in collaborating on impactful engineering projects and d
 # Projects
 Please note that the source code for some projects cannot be publicly released due to University of Toronto policies restricting the distribution of assignment solutions. To provide transparency, I have included detailed READMEs, architectural diagrams, and screenshots where possible to document design decisions, methodologies, and outcomes.
 
-### Hardware Projects
-
-#### Optimized Processor | 2024
-
-• Designed and implemented a 16-bit shared hardware processor on an Altera FPGA using Verilog/VHDL, modeling the control path as a finite state machine (FSM) and validating functionality with ModelSim simulations. <br />
-• Improved throughput and performance by introducing pipeline register stages, analyzing latency vs. clock frequency trade-offs to optimize speed and power efficiency. <br />
-• Engineered an FSM-driven control unit to manage register loading, ALU operations, and multiplexed datapath routing based on user-selected arithmetic functions. <br />
-• Developed a 2D image convolution accelerator on FPGA and benchmarked performance against CPU and GPU implementations, demonstrating hardware acceleration benefits for parallel workloads. <br />
-• Conducted timing, area, and power analysis for multi-clock designs, incorporating fixed-point and IEEE-754 floating-point representations to evaluate precision vs. resource utilization. <br />
-• Implemented memory-mapped output registers and displayed computation results on LEDs and hexadecimal seven-segment displays for real-time user feedback. <br />
-
-#### Music	Analyzer	|	2024
-• Implemented a	live	trumpet	replicator	SoC	using System	Verilog,	C Programming on	the	Xilinx	Artix-7	(Nexys	4	DDR and	Video)	FPGA	boards collaborating
-in	a	team	of	4 to	create	hardware	with	Vivado	(+IP	Integrator)	and software	on	the	MicroBlaze	processor	using	SDK <br />
-• The	project	will	listen	to	audio	from	the	user	using	a	SPI	MEMS	microphone;	process	the	audio	data	in	real-time	using
-digital	signal	processing	algorithms	that	include	sampling,	filtering,	equalization,	applying	the	Fast	Fourier	Transform
-and	verification	with	MATLAB;	and	identify	the	note	being	played	by	determining	the	respective	frequency	(pitch) <br />
-• The	positive	impact	of	the	project	will	be	with	learning	music	and	there	will	be	a	live	animated	trumpet	output	to	an
-HDMI	monitor (from	FPGA).	This	graphical	interface	will	help	each	beginning	trumpeter see	how	to	play	a	music	piece
-
-#### Operation | 2021
-•	Implemented and embedded a computer system C Programming on the Intel® DE1-SoC board with ARM Cortex A9 processor to create a 
-game that helps users learn about the various organs in the human body in an amusing manner <br />
-•	Employed a combination of logic instructions, interrupts, registers, input/output devices including a keyboard, timer, <br />
-7 Segment Displays, and VGA display to develop the software finite state machine for the game control
-
-#### Logisim | 2020
-•	Used Logisim (remote circuit development software) to implement 7400 series dual in-line package (DIP) chips to study circuits 
-with logic gates and understand how they can be used to manipulate and produce signals as desired
-
-#### Hexdecoder | 2020
-•	Designed a hexdecoder circuit using Verilog with multiplexers, modular hierarchy, and a 7 segment display to display hexadecimal values according to four switch signals (four bits) <br />
-•	Utilized Intel Quartus Prime to implement the Verilog design on FPGAs (Field Programmable Gate Array) describing the hexdecoder <br />
-•	Simulated the hardware design using ModelSim software and verified the output waveforms to ensure that the tool synthesizes the circuit correctly the first time since it can be time consuming sometimes
-
-#### Arithmetic Logic Unit (ALU) | 2020
-•	Designed a 7-to-1 multiplexer using Verilog case statements in an always block <br />
-•	Developed a ripple carry adder circuit that adds two 4-bit numbers using four instances of a full adder module <br />
-•	Built and simulated an ALU by implementing all required operations including addition, subtraction, sign extension, etc., and connected the outputs to a 7-to-1 multiplexer  <br />
-•	Using 3 select bits to drive the multiplexer select lines, the output value for the ALU can be chosen and then displayed on to LEDs and a set of HEX displays
-
-#### Registers | 2020
-•	Developed a gated D latch using Verilog that depends on the level of clock and placed two of them in series with opposite edges of clock to create an edge triggered D flip flop (also known as a primary-secondary flip flop) in which the output changes when the clock edge rises and also implemented an active low, synchronous reset <br />
-•	Designed an 8-bit register by having 8 flip flops in parallel to one another <br />
-•	Extended the functionality of the ALU by storing the output into an 8-bit register and implemented feedback into the second input of the ALU using the four least significant bits of the register output <br />
-•	Designed and simulated a left/right 8-bit rotating register with parallel load using 8 instantiations of the flip flop module in which shift occurs by copying the bites to the next flip flop to the left or right on successive clock cycles. The parallel load enables the user to enter a preset set of 8 binary bits
-
-#### Clocks and Counters | 2020
-•	Implemented a series of 8 T-flip flops in series using Verilog with additional combinational logic to develop an 8-bit counter with an enable signal and an active low asynchronous reset <br />
-•	Developed a rate divider (counter) that would use an industrial clock to increment a counter at varying speeds by having two counters. The rate divider creates pulses at the required rates by counting down certain numbers of clock cycles from the CPU clock frequency to achieve the desired speeds
-
-#### Finite State Machines | 2020
-•	Designed a finite state machine using Verilog that would identify certain sequences of binary patterns for the purpose of identifying specific numbers from a long sequence of binary bits <br />
-•	Emulated a typical calculator by implementing a finite state machine for the control to load numbers entered by the user into registers. It also accounts for the wait state as the user clocks the information <br />
-•	Used another separate finite state machine for the data path. Based on enables signals from the control path, the numbers entered by the user are stored in multiple registers. Then, it is relayed into Arithmetic Logic Units using multiplexers depending on the preferred arithmetic operation <br />
-•	Finally, the output is stored in register and output to LEDs and Hexadecimal displays at run-time
-
-#### Memory and VGA Display | 2020
-•	Developed a RAM memory block using Quartus IP Catalog and Verilog to store the pixels in a frame buffer which is then used by the VGA Controller to display images on to a monitor <br />
-•	Implemented a control finite state machine to take in user input and create enable signals for the data path <br />
-•	Designed a finite state machine that would take X, Y and RGB colour inputs to develop squares on the screen by modulating counters to pixelate (4 x 4) 16 more squares going in a down-right direction
-
-<br /><br />
 ### Software Projects
 
 #### Cloud Inventory Management Platform | 2025
@@ -250,6 +187,71 @@ way of playing the game taking less time and no need for the physical board and 
 easier for the user to see and have a better experience
 
 <br /><br />
+
+### Hardware Projects
+
+#### Optimized Processor | 2024
+
+• Designed and implemented a 16-bit shared hardware processor on an Altera FPGA using Verilog/VHDL, modeling the control path as a finite state machine (FSM) and validating functionality with ModelSim simulations. <br />
+• Improved throughput and performance by introducing pipeline register stages, analyzing latency vs. clock frequency trade-offs to optimize speed and power efficiency. <br />
+• Engineered an FSM-driven control unit to manage register loading, ALU operations, and multiplexed datapath routing based on user-selected arithmetic functions. <br />
+• Developed a 2D image convolution accelerator on FPGA and benchmarked performance against CPU and GPU implementations, demonstrating hardware acceleration benefits for parallel workloads. <br />
+• Conducted timing, area, and power analysis for multi-clock designs, incorporating fixed-point and IEEE-754 floating-point representations to evaluate precision vs. resource utilization. <br />
+• Implemented memory-mapped output registers and displayed computation results on LEDs and hexadecimal seven-segment displays for real-time user feedback. <br />
+
+#### Music	Analyzer	|	2024
+• Implemented a	live	trumpet	replicator	SoC	using System	Verilog,	C Programming on	the	Xilinx	Artix-7	(Nexys	4	DDR and	Video)	FPGA	boards collaborating
+in	a	team	of	4 to	create	hardware	with	Vivado	(+IP	Integrator)	and software	on	the	MicroBlaze	processor	using	SDK <br />
+• The	project	will	listen	to	audio	from	the	user	using	a	SPI	MEMS	microphone;	process	the	audio	data	in	real-time	using
+digital	signal	processing	algorithms	that	include	sampling,	filtering,	equalization,	applying	the	Fast	Fourier	Transform
+and	verification	with	MATLAB;	and	identify	the	note	being	played	by	determining	the	respective	frequency	(pitch) <br />
+• The	positive	impact	of	the	project	will	be	with	learning	music	and	there	will	be	a	live	animated	trumpet	output	to	an
+HDMI	monitor (from	FPGA).	This	graphical	interface	will	help	each	beginning	trumpeter see	how	to	play	a	music	piece
+
+#### Operation | 2021
+•	Implemented and embedded a computer system C Programming on the Intel® DE1-SoC board with ARM Cortex A9 processor to create a 
+game that helps users learn about the various organs in the human body in an amusing manner <br />
+•	Employed a combination of logic instructions, interrupts, registers, input/output devices including a keyboard, timer, <br />
+7 Segment Displays, and VGA display to develop the software finite state machine for the game control
+
+#### Logisim | 2020
+•	Used Logisim (remote circuit development software) to implement 7400 series dual in-line package (DIP) chips to study circuits 
+with logic gates and understand how they can be used to manipulate and produce signals as desired
+
+#### Hexdecoder | 2020
+•	Designed a hexdecoder circuit using Verilog with multiplexers, modular hierarchy, and a 7 segment display to display hexadecimal values according to four switch signals (four bits) <br />
+•	Utilized Intel Quartus Prime to implement the Verilog design on FPGAs (Field Programmable Gate Array) describing the hexdecoder <br />
+•	Simulated the hardware design using ModelSim software and verified the output waveforms to ensure that the tool synthesizes the circuit correctly the first time since it can be time consuming sometimes
+
+#### Arithmetic Logic Unit (ALU) | 2020
+•	Designed a 7-to-1 multiplexer using Verilog case statements in an always block <br />
+•	Developed a ripple carry adder circuit that adds two 4-bit numbers using four instances of a full adder module <br />
+•	Built and simulated an ALU by implementing all required operations including addition, subtraction, sign extension, etc., and connected the outputs to a 7-to-1 multiplexer  <br />
+•	Using 3 select bits to drive the multiplexer select lines, the output value for the ALU can be chosen and then displayed on to LEDs and a set of HEX displays
+
+#### Registers | 2020
+•	Developed a gated D latch using Verilog that depends on the level of clock and placed two of them in series with opposite edges of clock to create an edge triggered D flip flop (also known as a primary-secondary flip flop) in which the output changes when the clock edge rises and also implemented an active low, synchronous reset <br />
+•	Designed an 8-bit register by having 8 flip flops in parallel to one another <br />
+•	Extended the functionality of the ALU by storing the output into an 8-bit register and implemented feedback into the second input of the ALU using the four least significant bits of the register output <br />
+•	Designed and simulated a left/right 8-bit rotating register with parallel load using 8 instantiations of the flip flop module in which shift occurs by copying the bites to the next flip flop to the left or right on successive clock cycles. The parallel load enables the user to enter a preset set of 8 binary bits
+
+#### Clocks and Counters | 2020
+•	Implemented a series of 8 T-flip flops in series using Verilog with additional combinational logic to develop an 8-bit counter with an enable signal and an active low asynchronous reset <br />
+•	Developed a rate divider (counter) that would use an industrial clock to increment a counter at varying speeds by having two counters. The rate divider creates pulses at the required rates by counting down certain numbers of clock cycles from the CPU clock frequency to achieve the desired speeds
+
+#### Finite State Machines | 2020
+•	Designed a finite state machine using Verilog that would identify certain sequences of binary patterns for the purpose of identifying specific numbers from a long sequence of binary bits <br />
+•	Emulated a typical calculator by implementing a finite state machine for the control to load numbers entered by the user into registers. It also accounts for the wait state as the user clocks the information <br />
+•	Used another separate finite state machine for the data path. Based on enables signals from the control path, the numbers entered by the user are stored in multiple registers. Then, it is relayed into Arithmetic Logic Units using multiplexers depending on the preferred arithmetic operation <br />
+•	Finally, the output is stored in register and output to LEDs and Hexadecimal displays at run-time
+
+#### Memory and VGA Display | 2020
+•	Developed a RAM memory block using Quartus IP Catalog and Verilog to store the pixels in a frame buffer which is then used by the VGA Controller to display images on to a monitor <br />
+•	Implemented a control finite state machine to take in user input and create enable signals for the data path <br />
+•	Designed a finite state machine that would take X, Y and RGB colour inputs to develop squares on the screen by modulating counters to pixelate (4 x 4) 16 more squares going in a down-right direction
+
+<br /><br />
+
 ### Circuit Design Projects
 
 #### Arduino | 2017 – 2019
