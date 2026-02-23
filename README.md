@@ -33,6 +33,15 @@ Please note that the source code for some projects cannot be publicly released d
 
 ### Software Projects
 
+#### Coinsight: Cryptocurrency Price Prediction | 2025
+🔗 https://github.com/kris20012/crypto-price-prediction-rnn
+
+• Implemented Elman RNN baseline and stacked LSTM with dropout & batch normalization achieving test accuracy of
+68% to forecast next-day cryptocurrency prices using a sequence-to-one regression formulation and historical market data with a target relative error 10% or better
+• Preprocessed 7.3M+ rows of OHLCV crypto data including handling missing timestamps, normalizing features, computing rolling statistics, cumulative returns, technical indicators (RSI, MACD, Bollinger Bands, OBV, ATR), and cyclical time encodings, increasing predictive signal by ∼25% for financial time series using 30-day sliding windows
+• Designed and prepared training, validation, and test datasets with proper chronological splits, z-score scaling, and PyTorch DataLoaders
+• Trained models with MAE loss & Adam optimizer, and visualized training/validation curves to monitor convergence, overfitting, and generalization
+
 #### Cloud Inventory Management Platform | 2025
 🔗 https://github.com/ThomasPazhaidam/Inventory-Management-System
 
